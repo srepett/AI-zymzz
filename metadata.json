@@ -1,0 +1,8 @@
+{
+  "name": "Gemini AI Multi-Tool",
+  "description": "A comprehensive web application showcasing a wide range of Gemini API features, including chat, image/video generation and analysis, real-time audio conversations, grounded search, and more, all wrapped in a sleek, modern interface.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Multi-Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'gemini-cyan': '#00ddff',
+              'gemini-dark': '#0f172a',
+              'gemini-light-dark': '#1e293b',
+            },
+            keyframes: {
+              glow: {
+                '0%, 100%': { 'box-shadow': '0 0 5px #00ddff, 0 0 10px #00ddff' },
+                '50%': { 'box-shadow': '0 0 20px #00ddff, 0 0 30px #00ddff' }
+              }
+            },
+            animation: {
+              glow: 'glow 2s ease-in-out infinite',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gemini-dark text-gray-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
